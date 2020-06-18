@@ -1,0 +1,110 @@
+/* header {
+  position: static;
+} */
+
+body,
+ul,
+li,
+h1,
+h2,
+a {
+  margin: 0;
+  padding: ;
+}
+
+/* shifts away from the original position */
+/* Fixed  postions elements relative to the ciew port itself*/
+/* z-index brings things forward and push them back on the page. Every element has zero to begin with, so therefore 1 would bring it forward*/
+/* top and left removes zero from the pages */
+header {
+  background-color: #26194f;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+/* h2 header takes up the full width because it a blovk element, so we inline-block to add margin and padding and also not let it take the full width */
+header h2 {
+  color: white;
+  padding: 6px 12px;
+  border: 8px solid white;
+  display: inline-block;
+  border-radius: 36px;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+}
+
+/* try pixel and percentanges. Absolute positions elmeent in relative to the parent element*/
+
+.banner .welcome {
+  background: #26194f;
+  color: white;
+  padding: 30px;
+  position: absolute;
+  top: 30%;
+  left: 0;
+}
+
+.banner h2 {
+  font-size: 40px;
+}
+
+.banner h2 span {
+  font-size: 1.3em;
+}
+
+nav {
+  background-color: #f4f4f4;
+  padding: 20px;
+  position: sticky;
+  top: 148px;
+}
+
+/* setting white space for the parent element allows elements with width of 25%  from falling to next line */
+nav ul {
+  white-space: nowrap;
+}
+
+nav li {
+  width: 25%;
+  display: inline-block;
+  font-size: 25px;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav li a.join {
+  color: #f63232;
+}
+
+/* box sizing helps to keeping extending padding in the border box */
+
+main {
+  max-width: 100%;
+  width: 1200px;
+  margin: 8px auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+article h2 {
+  color: #f63232;
+  font-size: 48px;
+}
+
+article p {
+  line-height: 2em;
+}
