@@ -132,12 +132,20 @@ article p {
   max-width: 100%;
 }
 
-/* .join {
+.join {
   background: #f4f4f4;
   padding: 60px 20px;
   text-align: center;
 }
 
 .join h2 {
+  font-size: 36px;
+}
 
-} */
+form input {
+  margin: 20px 0;
+  padding: 10px 20px;
+  font-size: 24px;
+  border-radius: 28px;
+  border: 4px solid white;
+}
