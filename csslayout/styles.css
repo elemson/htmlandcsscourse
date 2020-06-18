@@ -107,4 +107,37 @@ article h2 {
 
 article p {
   line-height: 2em;
+  color: #4b4b4b;
 }
+
+/* no wrap lets all element in the children sits beside each other */
+
+.images {
+  text-align: center;
+  max-width: 80px 0;
+  white-space: nowrap;
+}
+
+/* box sizing helps to keeping extending padding in the border box */
+
+.images li {
+  display: inline-block;
+  width: 40%;
+  padding: 50px;
+  margin: 20px 5%;
+  box-sizing: border-box;
+}
+
+.images li img {
+  max-width: 100%;
+}
+
+/* .join {
+  background: #f4f4f4;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.join h2 {
+
+} */
