@@ -9,31 +9,30 @@ body {
 
 .wrapper {
   width: 100%;
-  max-width: 100%;
+  max-width: 960px;
   margin: 0 auto;
 }
 
 .flex-container {
   display: flex;
   background: #fff;
+  flex-wrap: wrap;
 }
 
 .box {
   height: 100px;
-  min-width: 100px;
+  min-width: 200px;
+  flex-grow: 1;
 }
 
 .one {
   background: red;
-  flex-grow: 3;
 }
 
 .two {
   background: blue;
-  flex-grow: 1;
 }
 
 .three {
   background: green;
-  flex-grow: 2;
 }
